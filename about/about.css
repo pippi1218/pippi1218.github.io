@@ -18,9 +18,9 @@ p {
 .anime {
   color: white;
   font-size: 25px;
-  text-align: center;
+  text-align: left;
 }
 
-li {
+ul li {
   list-style: none; /* リストの[・]を消す */
 }
