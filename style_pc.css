@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+@media screen and (min-width:781px){
+
+body{
+    padding-top: 90px;
+    background-color: black;
+    font-family:Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    font-size:100%;
+    width: 800px;
+    margin-right: auto;
+    margin-left : auto;
+
+}
+
+header {
+    width: 800px; /* 幅いっぱいを指定 */
+    margin-right: auto;
+    margin-left : auto;
+    height: 50px; /* 高さを50pxに指定 */
+    background: black; /* 背景色にグレーを指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+}
+header .nav .menu {
+    display: flex; /* 中の要素を横並びにする */
+}
+
+header .nav .menu li {
+    list-style: none; /* リストの[・]を消す */
+}
+
+header .nav .menu li + li {
+    margin-left: 50px; /* メニューそれぞれに間隔をあけるため */
+}
+
+
+.top{
+    width: 600px;
+    margin-right: auto;
+    margin-left : auto;
+    overflow: hidden;
+    animation: flowing 8s linear infinite;
+    transform: translateX(100%);
+}
+
+.top-text{
+    color:#FF33CC;
+    font-size: 20px;
+}
+
+.title{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+.title a{
+    margin-left:auto;
+    border: 0;
+    width:  45px;
+    height: 45px;
+
+}
+
+h1{
+    color: aqua;
+    font-size:70px;
+    text-align:center
+}
+
+img{
+    border: 0;
+    width:  500px;
+    height: 500px;
+}
+
+img.profile{
+    border: 0;
+    width:  190px;
+    height: 190px;
+}
+
+img.icon{
+    border: 0;
+    width:  50px;
+    height: 50px;
+}
+
+.tubuyaki{
+    float:left;
+    width: 500px;
+    border: #ffb6c1 solid 1px;
+    color: #FF99CC;
+    font-size: 100%;
+    padding: 10px;
+}
+
+p.marontta{
+    margin:0;
+    color: #FF99CC;
+    font-size:40px;
+    text-align:center
+}
+
+/*keyframes*/
+
+@keyframes flowing {
+    50% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slide {
+    0% {transform:translate(0, 0) ;}
+    100% {transform:translate(100%, 0);}
+}
+
+}
