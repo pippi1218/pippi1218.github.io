@@ -41,7 +41,7 @@
     margin-left: auto;
     overflow: hidden;
     animation: flowing 4s linear infinite;
-    transform: translateX(80%);
+    transform: translateX(90%);
   }
 
   .top-text {
