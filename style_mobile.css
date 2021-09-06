@@ -1,42 +1,42 @@
 @charset "utf-8";
 
-@media screen and (max-width: 781px) {
+@media screen and (max-width: 800px) {
   body {
     padding-top: 90px;
     background-color: black;
     font-family: Verdana, "ＭＳ Ｐゴシック", sans-serif;
     font-size: 100%;
-    width: 800px;
+    width: 640px;
     margin-right: auto;
     margin-left: auto;
   }
 
   header {
-    width: 800px; /* 幅いっぱいを指定 */
+    width: 640px;
     margin-right: auto;
     margin-left: auto;
-    height: 50px; /* 高さを50pxに指定 */
-    background: black; /* 背景色にグレーを指定 */
-    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
-    position: fixed; /* ウィンドウを基準に画面に固定 */
-    top: 0; /* 上下の固定位置を上から0pxにする */
-    display: flex; /* 中の要素を横並びにする */
-    align-items: center; /* 中の要素を上下中央に並べる */
+    height: 50px;
+    background: black;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
   }
   header .nav .menu {
-    display: flex; /* 中の要素を横並びにする */
+    display: flex;
   }
 
   header .nav .menu li {
-    list-style: none; /* リストの[・]を消す */
+    list-style: none;
   }
 
   header .nav .menu li + li {
-    margin-left: 50px; /* メニューそれぞれに間隔をあけるため */
+    margin-left: 50px;
   }
 
   .top {
-    width: 600px;
+    width: 440px;
     margin-right: auto;
     margin-left: auto;
     overflow: hidden;
@@ -70,13 +70,7 @@
   img {
     border: 0;
     width: 500px;
-    height: 500px;
-  }
-
-  img.profile {
-    border: 0;
-    width: 190px;
-    height: 190px;
+    height: auto;
   }
 
   img.icon {
@@ -85,9 +79,15 @@
     height: 50px;
   }
 
+  img.profile {
+    border: 0;
+    width: 190px;
+    height: 190px;
+  }
+
   .tubuyaki {
     float: left;
-    width: 500px;
+    width: 618px;
     border: #ffb6c1 solid 1px;
     color: #ff99cc;
     font-size: 100%;
