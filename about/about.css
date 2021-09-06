@@ -1,0 +1,22 @@
+body {
+  padding-top: 90px;
+  background-color: black;
+  font-family: Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 100%;
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p {
+  margin: 0%;
+  color: aqua;
+  font-size: 50px;
+  text-align: center;
+}
+
+.anime {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
