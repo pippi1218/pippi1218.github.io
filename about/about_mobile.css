@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@media screen and (max-width: 800px) {
+  body {
+    padding-top: 90px;
+    background-color: black;
+    font-family: Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    font-size: 12px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  header {
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100px;
+    background: black;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  header .nav .menu {
+    display: flex; /* 中の要素を横並びにする */
+  }
+
+  header .nav .menu li {
+    list-style: none; /* リストの[・]を消す */
+  }
+
+  header .nav .menu li + li {
+    margin-left: 25px; /* メニューそれぞれに間隔をあけるため */
+  }
+
+  p {
+    margin: 0%;
+    color: aqua;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .anime {
+    color: white;
+    font-size: 25px;
+    text-align: left;
+  }
+
+  ul li {
+    list-style: none; /* リストの[・]を消す */
+  }
+}

@@ -1,50 +1,54 @@
-body {
-  padding-top: 90px;
-  background-color: black;
-  font-family: Verdana, "ＭＳ Ｐゴシック", sans-serif;
-  font-size: 100%;
-  width: 800px;
-  margin-right: auto;
-  margin-left: auto;
-}
+@charset "utf-8";
 
-header {
-  width: 800px; /* 幅いっぱいを指定 */
-  margin-right: auto;
-  margin-left: auto;
-  height: 50px; /* 高さを50pxに指定 */
-  background: black; /* 背景色にグレーを指定 */
-  box-sizing: border-box; /* padding分を含んで幅を100%にするため */
-  position: fixed; /* ウィンドウを基準に画面に固定 */
-  top: 0; /* 上下の固定位置を上から0pxにする */
-  display: flex; /* 中の要素を横並びにする */
-  align-items: center; /* 中の要素を上下中央に並べる */
-}
-header .nav .menu {
-  display: flex; /* 中の要素を横並びにする */
-}
+@media screen and (min-width: 800px) {
+  body {
+    padding-top: 90px;
+    background-color: black;
+    font-family: Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    font-size: 100%;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-header .nav .menu li {
-  list-style: none; /* リストの[・]を消す */
-}
+  header {
+    width: 800px; /* 幅いっぱいを指定 */
+    margin-right: auto;
+    margin-left: auto;
+    height: 50px; /* 高さを50pxに指定 */
+    background: black; /* 背景色にグレーを指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+  }
+  header .nav .menu {
+    display: flex; /* 中の要素を横並びにする */
+  }
 
-header .nav .menu li + li {
-  margin-left: 50px; /* メニューそれぞれに間隔をあけるため */
-}
+  header .nav .menu li {
+    list-style: none; /* リストの[・]を消す */
+  }
 
-p {
-  margin: 0%;
-  color: aqua;
-  font-size: 50px;
-  text-align: center;
-}
+  header .nav .menu li + li {
+    margin-left: 50px; /* メニューそれぞれに間隔をあけるため */
+  }
 
-.anime {
-  color: white;
-  font-size: 25px;
-  text-align: left;
-}
+  p {
+    margin: 0%;
+    color: aqua;
+    font-size: 30px;
+    text-align: center;
+  }
 
-ul li {
-  list-style: none; /* リストの[・]を消す */
+  .anime {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  ul li {
+    list-style: none; /* リストの[・]を消す */
+  }
 }
