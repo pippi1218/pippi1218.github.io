@@ -34,21 +34,4 @@
   header .nav .menu li + li {
     margin-left: 50px;
   }
-
-  p {
-    margin: 0%;
-    color: aqua;
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .anime {
-    color: white;
-    font-size: 20px;
-    text-align: left;
-  }
-
-  ul li {
-    list-style: none; /* リストの[・]を消す */
-  }
 }

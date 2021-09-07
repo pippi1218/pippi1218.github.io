@@ -74,21 +74,22 @@
     height: auto;
   }
 
-  img.icon {
+  #icon-img {
     border: 0;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
-  img.profile {
+  #profile-img {
     border: 0;
     width: 190px;
     height: 190px;
   }
 
-  .tubuyaki {
+  .marontter {
     float: left;
     width: 500px;
+    margin-bottom: 10px;
     border: #ffb6c1 solid 1px;
     color: #ff99cc;
     font-size: 100%;
@@ -102,17 +103,16 @@
     text-align: center;
   }
 
-  .twitter-title {
-    margin: 0;
-    color: #ff99cc;
-    font-size: 20px;
-    text-align: center;
-  }
+  footer {
+    display: flex;
+    justify-content: space-around;
 
-  .twitter-timeline {
-    margin-left: 5px;
-    width: 270px !important;
-    height: 600px !important;
+    /* 以下 背景色やテキストカラーなどはお好みで指定してください */
+    background-color: whitesmoke;
+    width: 800px;
+    color: #ff99cc;
+    text-align: center;
+    padding: 20px 0;
   }
 
   /*keyframes*/
