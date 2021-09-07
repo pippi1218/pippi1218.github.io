@@ -153,7 +153,7 @@ window.onload=function(){
         endScene.addChild(tweetBtn);
 
         tweetBtn.ontouchend = function(){
-            const url = encodeURI("http://pippi1218.starfree.jp/");
+            const url = encodeURI("http://www.marooom.com/game/toricatch/index.html");
 			window.open("http://twitter.com/intent/tweet?text=" + point + "羽捕まえたよ！&hashtags=toricatch&url=" + url);
         };
     };
