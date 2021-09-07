@@ -12,27 +12,27 @@
   }
 
   header {
-    width: 800px; /* 幅いっぱいを指定 */
+    width: 800px;
     margin-right: auto;
     margin-left: auto;
-    height: 50px; /* 高さを50pxに指定 */
-    background: black; /* 背景色にグレーを指定 */
-    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
-    position: fixed; /* ウィンドウを基準に画面に固定 */
-    top: 0; /* 上下の固定位置を上から0pxにする */
-    display: flex; /* 中の要素を横並びにする */
-    align-items: center; /* 中の要素を上下中央に並べる */
+    height: 50px;
+    background: black;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
   }
   header .nav .menu {
-    display: flex; /* 中の要素を横並びにする */
+    display: flex;
   }
 
   header .nav .menu li {
-    list-style: none; /* リストの[・]を消す */
+    list-style: none;
   }
 
   header .nav .menu li + li {
-    margin-left: 50px; /* メニューそれぞれに間隔をあけるため */
+    margin-left: 50px;
   }
 
   p {
