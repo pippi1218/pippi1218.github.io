@@ -55,12 +55,6 @@
     flex-direction: column;
   }
 
-  .title a {
-    order: 2;
-    align-items: center;
-    border: 0;
-  }
-
   h1 {
     order: 0;
     color: aqua;
@@ -68,7 +62,13 @@
     text-align: center;
   }
 
-  img {
+  .count p {
+    color: rgb(236, 76, 228);
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .marontter img {
     border: 0;
     width: 350px;
     height: auto;

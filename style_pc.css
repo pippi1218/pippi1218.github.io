@@ -55,20 +55,22 @@
     align-items: center;
   }
 
-  .title a {
-    margin-left: auto;
-    border: 0;
-    width: 45px;
-    height: 45px;
-  }
-
   h1 {
+    margin: 0;
     color: aqua;
     font-size: 70px;
     text-align: center;
   }
 
-  img {
+  .count p {
+    margin: 0;
+    float: right;
+    color: rgb(236, 76, 228);
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .marontter img {
     border: 0;
     width: 500px;
     height: auto;
