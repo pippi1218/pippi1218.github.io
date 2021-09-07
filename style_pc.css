@@ -102,6 +102,19 @@
     text-align: center;
   }
 
+  .twitter-title {
+    margin: 0;
+    color: #ff99cc;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .twitter-timeline {
+    margin-left: 5px;
+    width: 270px !important;
+    height: 600px !important;
+  }
+
   /*keyframes*/
 
   @keyframes flowing {

@@ -104,6 +104,11 @@
     text-align: center;
   }
 
+  .twitter-timeline {
+    width: 353px !important;
+    height: 300px !important;
+  }
+
   /*keyframes*/
 
   @keyframes flowing {
