@@ -11,7 +11,18 @@
 	<title>まろんの部屋</title>
 </head>
 
+<script>
+	window.onload = function () {
+	const loader_element = document.getElementById('loader_wrap');
+	loader_element.classList.add('loaded');
+	};
+</script>
+
 <body>
+	<div id="loader_wrap">
+		<div class="loader"></div>
+	</div>
+
 	<header>
 		<nav class="nav">
 			<ul class="menu">
