@@ -30,12 +30,12 @@ window.onload=function(){
 	game.preload([tweetImgUrl]);
 
 
-
-
     game.onload=function(){
 
         let point = 0;
         let state = 0;
+
+        let resultPoint = 0;
 
         const mainScene = new Scene();
         game.pushScene(mainScene);
@@ -124,7 +124,9 @@ window.onload=function(){
 
                 gameOverText.text = "GAMEOVER 記録：" + point + "羽";
 
-                rankingText.text = "ランキング上位TOP10";
+
+
+                rankingText.text = "　　";
 
             }
         };
