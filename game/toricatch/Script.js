@@ -30,6 +30,8 @@ window.onload=function(){
 	game.preload([tweetImgUrl]);
 
 
+
+
     game.onload=function(){
 
         let point = 0;
@@ -60,7 +62,7 @@ window.onload=function(){
         mainScene.addChild(cloudImg2);
 
         //inkoボタン
-        const　inkoImg = new Sprite(100,100);
+        const inkoImg = new Sprite(100,100);
         inkoImg.moveTo(118,100);
         inkoImg.image = game.assets[charImg1Url];
         mainScene.addChild(inkoImg);
@@ -85,8 +87,6 @@ window.onload=function(){
         };
 
         game.onenterframe = function(){
-
-            game.assets[bgmUrl].play();
 
             if(state == 0){
                 inkoImg.x = -200;
@@ -123,6 +123,9 @@ window.onload=function(){
                 game.pushScene(endScene);
 
                 gameOverText.text = "GAMEOVER 記録：" + point + "羽";
+
+                rankingText.text = "ランキング上位TOP10";
+
             }
         };
 
@@ -136,8 +139,15 @@ window.onload=function(){
         gameOverText.moveTo(0,30);
         endScene.addChild(gameOverText);
 
+        const rankingText = new Label();
+        rankingText.font = "20px Meiryo";
+        rankingText.color = 'rgba(255,255,255,1)';
+        rankingText.width = 400;
+        rankingText.moveTo(0,200);
+        endScene.addChild(rankingText);
+
         const retryBtn = new Sprite(120,60);
-        retryBtn.moveTo(50,300);
+        retryBtn.moveTo(50,100);
         retryBtn.image = game.assets[retryImgUrl];
         endScene.addChild(retryBtn);
 
@@ -148,7 +158,7 @@ window.onload=function(){
         };
 
         const tweetBtn = new Sprite(120,60);
-        tweetBtn.moveTo(230,300);
+        tweetBtn.moveTo(230,100);
         tweetBtn.image = game.assets[tweetImgUrl];
         endScene.addChild(tweetBtn);
 
