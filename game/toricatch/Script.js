@@ -29,13 +29,15 @@ window.onload=function(){
 	const tweetImgUrl = "tweet.png";
 	game.preload([tweetImgUrl]);
 
+    const rankingImgUrl = "ranking.png";
+	game.preload([rankingImgUrl]);
+
 
     game.onload=function(){
 
         let point = 0;
         let state = 0;
 
-        let resultPoint = 0;
 
         const mainScene = new Scene();
         game.pushScene(mainScene);
@@ -119,14 +121,11 @@ window.onload=function(){
             scoreText.text = "現在:" + point;
 
             if(inkoImg.x >= 400){
+
                 game.popScene();
                 game.pushScene(endScene);
 
                 gameOverText.text = "GAMEOVER 記録：" + point + "羽";
-
-
-
-                rankingText.text = "　　";
 
             }
         };
@@ -140,13 +139,6 @@ window.onload=function(){
         gameOverText.width = 400;
         gameOverText.moveTo(0,30);
         endScene.addChild(gameOverText);
-
-        const rankingText = new Label();
-        rankingText.font = "20px Meiryo";
-        rankingText.color = 'rgba(255,255,255,1)';
-        rankingText.width = 400;
-        rankingText.moveTo(0,200);
-        endScene.addChild(rankingText);
 
         const retryBtn = new Sprite(120,60);
         retryBtn.moveTo(50,100);
@@ -167,6 +159,17 @@ window.onload=function(){
         tweetBtn.ontouchend = function(){
             const url = encodeURI("http://www.marooom.com/game/toricatch/index.html");
 			window.open("http://twitter.com/intent/tweet?text=" + point + "羽捕まえたよ！&hashtags=toricatch&url=" + url);
+        };
+
+        const rankingBtn = new Sprite(120,60);
+        rankingBtn.moveTo(140,200);
+        rankingBtn.image = game.assets[rankingImgUrl];
+        endScene.addChild(rankingBtn);
+
+        rankingBtn.ontouchend = function(){
+
+            window.open("ranking.html");
+
         };
     };
 
