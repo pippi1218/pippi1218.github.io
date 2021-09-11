@@ -3,20 +3,18 @@
 @media screen and (max-width: 800px) {
   body {
     padding-top: 90px;
-    background-color: black;
-    font-family: Verdana, "ＭＳ Ｐゴシック", sans-serif;
-    font-size: 12px;
-    width: 375px;
+    background-color: rgb(240, 173, 173);
+    font-family: "メイリオ", Meiryo, sans-serif;
+    font-size: 100%;
+    width: 800px;
     margin-right: auto;
     margin-left: auto;
   }
 
   header {
     width: 375px;
-    margin-right: auto;
     margin-left: auto;
     height: 100px;
-    background: black;
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -33,5 +31,36 @@
 
   header .nav .menu li + li {
     margin-left: 25px;
+  }
+
+  #title {
+    margin: 0;
+    color: aqua;
+    font-size: 30px;
+    text-align: center;
+  }
+  #ref {
+    margin: 0;
+    text-align: center;
+  }
+  #e_content {
+    height: 100px;
+    width: 100%;
+  }
+  #container {
+    width: px;
+    margin: 0 auto;
+  }
+  #form {
+    width: 100%;
+  }
+  #main {
+    padding: 15px;
+    border: 1px #333 solid;
+    max-height: 450px;
+    overflow-y: scroll;
+  }
+  .msg {
+    border-bottom: 1px dashed #666;
   }
 }
