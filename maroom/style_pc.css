@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+@media screen and (min-width: 800px) {
+  body {
+    padding-top: 90px;
+    background-color: black;
+    font-family: Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    font-size: 100%;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  header {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 50px;
+    background: black;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+  header .nav .menu {
+    display: flex;
+  }
+
+  header .nav .menu li {
+    list-style: none;
+  }
+
+  header .nav .menu li + li {
+    margin-left: 50px;
+  }
+
+  .top {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    animation: flowing 8s linear infinite;
+    transform: translateX(100%);
+  }
+
+  .top-text {
+    color: #ff33cc;
+    font-size: 20px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  h1 {
+    margin: 0;
+    color: aqua;
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .count p {
+    margin: 0;
+    float: right;
+    color: rgb(236, 76, 228);
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .marontter img {
+    border: 0;
+    width: 500px;
+    height: auto;
+  }
+
+  #icon-img {
+    border: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  #profile-img {
+    border: 0;
+    width: 190px;
+    height: 190px;
+  }
+
+  .marontter {
+    float: left;
+    width: 500px;
+    margin-bottom: 10px;
+    border: #ffb6c1 solid 1px;
+    color: #ff99cc;
+    font-size: 100%;
+    padding: 10px;
+  }
+
+  h4 article-date {
+    margin: 0;
+    color: #ff99cc;
+  }
+
+  h2 {
+    margin: 0;
+    color: #ff99cc;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+
+    /* 以下 背景色やテキストカラーなどはお好みで指定してください */
+    background-color: whitesmoke;
+    width: 800px;
+    color: #ff99cc;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  /*keyframes*/
+
+  @keyframes flowing {
+    50% {
+      transform: translateX(-100px);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(100%, 0);
+    }
+  }
+}

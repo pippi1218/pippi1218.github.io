@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+@media screen and (max-width: 800px) {
+  body {
+    padding-top: 90px;
+    background-color: black;
+    font-family: Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    font-size: 12px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  header {
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100px;
+    background: black;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+  header .nav .menu {
+    display: flex;
+  }
+
+  header .nav .menu li {
+    list-style: none;
+  }
+
+  header .nav .menu li + li {
+    margin-left: 25px;
+  }
+
+  .top {
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    animation: flowing 4s linear infinite;
+    transform: translateX(90%);
+  }
+
+  .top-text {
+    color: #ff33cc;
+    font-size: 20px;
+  }
+
+  .title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    order: 0;
+    color: aqua;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .count p {
+    color: rgb(236, 76, 228);
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .marontter img {
+    border: 0;
+    width: 350px;
+    height: auto;
+  }
+
+  #icon-img {
+    border: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  #profile-img {
+    order: 1;
+    border: 0;
+    width: 200px;
+    height: 200px;
+  }
+
+  .marontter {
+    float: left;
+    width: 353px;
+    border: #ffb6c1 solid 1px;
+    color: #ff99cc;
+    font-size: 100%;
+    padding: 10px;
+  }
+
+  h4 article-date {
+    margin: 0;
+    color: #ff99cc;
+  }
+
+  h2 {
+    margin: 0;
+    color: #ff99cc;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+
+    /* 以下 背景色やテキストカラーなどはお好みで指定してください */
+    background-color: whitesmoke;
+    width: 375px;
+    color: #ff99cc;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  /*keyframes*/
+
+  @keyframes flowing {
+    50% {
+      transform: translateX(-90px);
+    }
+    100% {
+      transform: translateX(90%);
+    }
+  }
+
+  @keyframes slide {
+    100% {
+      transform: translate(-175px);
+    }
+  }
+}
