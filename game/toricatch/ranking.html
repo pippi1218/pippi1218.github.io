@@ -22,13 +22,14 @@
             };
             firebase.initializeApp(config);
         </script>
+        <script src="ranking.js"></script>
 
 	</head>
 
 <body>
     <div id="container">
         <div id="main">
-            まだ未実装
+            まだ未実装！
         </div>
         <div>
             <table id="form">
@@ -37,44 +38,15 @@
                     <td><input id="e_name"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td><Button onclick="submit()">Submit</Button></td>
+                    <td>Your Score</td>
+                    <td id="e_point">123</td>
+                </tr>
+                <tr>
+                    <td>ランキングに登録</td>
+                    <td><Button onclick="submit()">実行</Button></td>
                 </tr>
             </table>
         </div>
     </div>
 </body>
-
-<script>
-    var db = firebase.firestore();
-
-//ランキングの表示
-
-
-
-
-
-
-
-//スコアの登録
-    function submit() {
-        var el_n = document.getElementById("e_name")
-        var name = el_n.value,
-            point = 10;
-        if (name == "") {
-            alert("Please fill out the blank!");
-            return;
-        }
-        db.collection("scores").add({
-            name: name,
-            point: point
-        })
-        .then(function(docRef) {
-            console.log("Document written with ID: ", docRef.id);
-        })
-        .catch(function(error) {
-            console.error("Error adding document: ", error);
-        });
-    }
-</script>
 </html>
