@@ -13,6 +13,8 @@
 
   header {
     width: 375px;
+    margin-left: auto;
+    margin-right: auto;
     height: 100px;
     box-sizing: border-box;
     position: fixed;
@@ -31,11 +33,10 @@
   header .nav .menu li + li {
     margin-left: 25px;
   }
-
   #title {
     margin: 0;
     color: aqua;
-    font-size: 20px;
+    font-size: 40px;
     text-align: center;
   }
   #ref {
