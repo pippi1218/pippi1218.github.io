@@ -37,6 +37,7 @@ window.onload=function(){
 
         let point = 0;
         let state = 0;
+        initFlag = false;
 
 
         const mainScene = new Scene();
@@ -120,12 +121,14 @@ window.onload=function(){
 
             scoreText.text = "現在:" + point;
 
-            if(inkoImg.x >= 400){
+            if(inkoImg.x >= 400 && initFlag == false){
 
                 game.popScene();
                 game.pushScene(endScene);
 
                 gameOverText.text = "GAMEOVER 記録：" + point + "羽";
+
+                initFlag = true;
 
             }
         };
@@ -147,6 +150,7 @@ window.onload=function(){
 
         retryBtn.ontouchend = function(){
             state = 0;
+            initFlag = false;
             game.popScene();
             game.pushScene(mainScene);
         };
@@ -161,15 +165,38 @@ window.onload=function(){
 			window.open("http://twitter.com/intent/tweet?text=" + point + "羽捕まえたよ！&hashtags=toricatch&url=" + url);
         };
 
-        const rankingBtn = new Sprite(120,60);
-        rankingBtn.moveTo(140,200);
-        rankingBtn.image = game.assets[rankingImgUrl];
-        endScene.addChild(rankingBtn);
+        //const rankingBtn = new Sprite(120,60);
+        //rankingBtn.moveTo(140,200);
+        //rankingBtn.image = game.assets[rankingImgUrl];
+        //endScene.addChild(rankingBtn);
 
-        rankingBtn.ontouchend = function(){
 
-            window.open("ranking.html");
+        //rankingBtn.ontouchend = function(){
+        //    game.popScene();
+        //    game.pushScene(rankingScene);
+        //};
 
+        var input = new Entity();
+        input._element = document.createElement('input');
+        input._element.setAttribute('id','e_name');
+        input._element.setAttribute('type','text');
+        input._element.setAttribute('maxlength','10');
+        input.width = 100;
+        input.height = 20;
+        input.x = 20;
+        input.y = 200;
+        endScene.addChild(input);
+
+        const button = new Entity();
+        button._element = document.createElement('button');
+        button.width = 40;
+        button.height = 25;
+        button.x = 130;
+        button.y = 200;
+        endScene.addChild(button);
+
+        button.ontouchend = function(){
+            submit();
         };
     };
 
