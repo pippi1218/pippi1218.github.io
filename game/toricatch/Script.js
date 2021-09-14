@@ -196,7 +196,7 @@ window.onload=function(){
                 inkoImg.y =100 + Math.cos(inkoImg.x/10)*100;
             }
             if(state == 18){
-                inkoImg.x += 12;
+                inkoImg.x += 10;
                 inkoImg.y = Math.random()*400;
             }
 
