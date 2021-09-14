@@ -182,7 +182,7 @@ window.onload=function(){
         endScene.addChild(formText2);
 
         const formText3 = new Label();
-        formText3.text = "登録する⇒";
+        formText3.text = "登録する→";
         formText3.font = "15px Meiryo";
         formText3.color = 'rgba(255,255,255,1)';
         formText3.width = 400;
