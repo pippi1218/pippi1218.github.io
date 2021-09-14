@@ -196,7 +196,7 @@ window.onload=function(){
         endScene.addChild(button);
 
         button.ontouchend = function(){
-            submit();
+            submit(point);
         };
     };
 

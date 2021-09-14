@@ -1,12 +1,11 @@
-function submit() {
+var db = firebase.firestore();
+
+function submit(p) {
 
     var el_n = document.getElementById("e_name")
     var name = el_n.value
 
-    //var el_p = document.getElementById("e_point")
-    //var point = Number(el_p.innerText)
-
-    var point = 100
+    var point = p
 
     if (name == "" || point == "") {
         alert("Please fill out the blank!");
