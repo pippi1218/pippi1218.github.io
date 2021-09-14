@@ -26,15 +26,15 @@ function submit(p) {
 function read_ranking(){
     var LIST = [];  //ID保管用
 
-    db.collection("scores").get().then((querySnapshot) => {
+    db.collection("scores").orderBy('point', 'desc').limit(10).get().then((querySnapshot) => {
             var buff = [];
-            var html = "<ul>";
+            var html = "<ol>";
             querySnapshot.forEach((doc) => {
                 var data = doc.data();
-                html += `<li>${data.name}, ${data.point}</li>`;
+                html += `<li>${data.name} :${data.point}羽</li>`;
                 buff.push(doc.id);
             });
-            html += "</ul>";
+            html += "</ol>";
             LIST = buff;
             showMessage(html);
         })

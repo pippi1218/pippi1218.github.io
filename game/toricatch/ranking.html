@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-firestore.js"></script>
+
+    <script src="./config.js"></script>
+    <script src="./ranking.js"></script>
+
+    <style type="text/css">
+        a:link {
+            text-decoration: none;
+            color: #E6E6FA;
+        }
+
+        body {
+            background-color: #222222;
+            color: #FFFFFF;
+        }
+        .center{
+            border:1px solid gray;
+            width:400px;
+            margin-right:auto;
+            margin-left:auto;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div id="ranking"></div>
+    <script>
+
+        read_ranking();
+    </script>
+
+</body>
+</html>

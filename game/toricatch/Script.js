@@ -144,7 +144,7 @@ window.onload=function(){
         endScene.addChild(gameOverText);
 
         const retryBtn = new Sprite(120,60);
-        retryBtn.moveTo(50,100);
+        retryBtn.moveTo(50,200);
         retryBtn.image = game.assets[retryImgUrl];
         endScene.addChild(retryBtn);
 
@@ -156,7 +156,7 @@ window.onload=function(){
         };
 
         const tweetBtn = new Sprite(120,60);
-        tweetBtn.moveTo(230,100);
+        tweetBtn.moveTo(230,200);
         tweetBtn.image = game.assets[tweetImgUrl];
         endScene.addChild(tweetBtn);
 
@@ -165,17 +165,6 @@ window.onload=function(){
 			window.open("http://twitter.com/intent/tweet?text=" + point + "羽捕まえたよ！&hashtags=toricatch&url=" + url);
         };
 
-        //const rankingBtn = new Sprite(120,60);
-        //rankingBtn.moveTo(140,200);
-        //rankingBtn.image = game.assets[rankingImgUrl];
-        //endScene.addChild(rankingBtn);
-
-
-        //rankingBtn.ontouchend = function(){
-        //    game.popScene();
-        //    game.pushScene(rankingScene);
-        //};
-
         var input = new Entity();
         input._element = document.createElement('input');
         input._element.setAttribute('id','e_name');
@@ -183,21 +172,22 @@ window.onload=function(){
         input._element.setAttribute('maxlength','10');
         input.width = 100;
         input.height = 20;
-        input.x = 20;
-        input.y = 200;
+        input.x = 50;
+        input.y = 350;
         endScene.addChild(input);
 
         const button = new Entity();
         button._element = document.createElement('button');
         button.width = 40;
         button.height = 25;
-        button.x = 130;
-        button.y = 200;
+        button.x = 160;
+        button.y = 350;
         endScene.addChild(button);
 
         button.ontouchend = function(){
             submit(point);
         };
+
     };
 
     game.start();//開始！
