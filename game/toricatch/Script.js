@@ -84,8 +84,34 @@ window.onload=function(){
                 state = 3;
             }else if(point < 12){
                 state = 4;
-            }else{
+            }else if(point < 15){
                 state = 5;
+            }else if(point < 18){
+                state = 6;
+            }else if(point < 21){
+                state = 7;
+            }else if(point < 24){
+                state = 8;
+            }else if(point < 27){
+                state = 9;
+            }else if(point < 30){
+                state = 10;
+            }else if(point < 33){
+                state = 11;
+            }else if(point < 36){
+                state = 12;
+            }else if(point < 39){
+                state = 13;
+            }else if(point < 42){
+                state = 14;
+            }else if(point < 45){
+                state = 15;
+            }else if(point < 48){
+                state = 16;
+            }else if(point < 51){
+                state = 17;
+            }else{
+                state = 18;
             }
         };
 
@@ -104,20 +130,76 @@ window.onload=function(){
                 inkoImg.x += 15;
             }
             if(state == 3){
+                inkoImg.y = Math.random()*400;
+                state = 3.1;
+            }
+            if(state == 3.1){
                 inkoImg.x += 10;
-                inkoImg.y = 200 + Math.sin(inkoImg.x/70)*100;
             }
             if(state == 4){
                 inkoImg.y = Math.random()*400;
                 state = 4.1;
             }
             if(state == 4.1){
-                inkoImg.x += 10;
+                inkoImg.x += 15;
             }
             if(state == 5){
+                inkoImg.x += 15;
+                inkoImg.y =250 + Math.cos(inkoImg.x/200)*150;
+            }
+            if(state == 6){
                 inkoImg.x += 10;
+                inkoImg.y = 100 + Math.sin(inkoImg.x/50)*50;
+            }
+            if(state == 7){
+                inkoImg.x += 10;
+                inkoImg.y =200 + Math.sin(inkoImg.x/100)*100;
+            }
+            if(state == 8){
+                inkoImg.x += 13;
+                inkoImg.y = 100 + Math.sin(inkoImg.x/70)*90;
+            }
+            if(state == 9){
+                inkoImg.x += 25;
+                inkoImg.y = 200;
+            }
+            if(state == 10){
+                inkoImg.x += 25;
+                inkoImg.y =100 + Math.cos(inkoImg.x/200)*150;
+            }
+            if(state == 11){
+                inkoImg.x += 8;
+                inkoImg.y =100 + Math.tan(inkoImg.x/50)*30;
+            }
+            if(state == 12){
+                inkoImg.x += 8;
+                inkoImg.y =100 + Math.tan(inkoImg.x/100)*50;
+            }
+            if(state == 13){
+                inkoImg.x += 15;
+                inkoImg.y =200 + Math.atan(inkoImg.x/-20)*100;
+            }
+            if(state == 14){
+                inkoImg.x += 5;
+                inkoImg.y =200 + Math.cos(inkoImg.x/50)*400;
+            }
+            if(state == 15){
+                inkoImg.x += 15;
+                inkoImg.y =100 + Math.tanh(inkoImg.x/100)*300;
+            }
+            if(state == 16){
+                inkoImg.x += 15;
+                inkoImg.y =100 + Math.sin(inkoImg.x/100)*300;
+            }
+            if(state == 17){
+                inkoImg.x += 15;
+                inkoImg.y =100 + Math.cos(inkoImg.x/10)*100;
+            }
+            if(state == 18){
+                inkoImg.x += 12;
                 inkoImg.y = Math.random()*400;
             }
+
 
             scoreText.text = "現在:" + point;
 
