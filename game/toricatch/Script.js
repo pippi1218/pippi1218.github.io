@@ -165,12 +165,36 @@ window.onload=function(){
 			window.open("http://twitter.com/intent/tweet?text=" + point + "羽捕まえたよ！&hashtags=toricatch&url=" + url);
         };
 
+        const formText = new Label();
+        formText.text = "名前を入力してランキングに登録しよう！";
+        formText.font = "20px Meiryo";
+        formText.color = 'rgba(255,255,255,1)';
+        formText.width = 400;
+        formText.moveTo(0,320);
+        endScene.addChild(formText);
+
+        const formText2 = new Label();
+        formText2.text = "お名前";
+        formText2.font = "15px Meiryo";
+        formText2.color = 'rgba(255,255,255,1)';
+        formText2.width = 400;
+        formText2.moveTo(0,355);
+        endScene.addChild(formText2);
+
+        const formText3 = new Label();
+        formText3.text = "登録する⇒";
+        formText3.font = "15px Meiryo";
+        formText3.color = 'rgba(255,255,255,1)';
+        formText3.width = 400;
+        formText3.moveTo(215,355);
+        endScene.addChild(formText3);
+
         var input = new Entity();
         input._element = document.createElement('input');
         input._element.setAttribute('id','e_name');
         input._element.setAttribute('type','text');
         input._element.setAttribute('maxlength','10');
-        input.width = 100;
+        input.width = 150;
         input.height = 20;
         input.x = 50;
         input.y = 350;
@@ -180,12 +204,13 @@ window.onload=function(){
         button._element = document.createElement('button');
         button.width = 40;
         button.height = 25;
-        button.x = 160;
+        button.x = 295;
         button.y = 350;
         endScene.addChild(button);
 
         button.ontouchend = function(){
             submit(point);
+            point=0;
         };
 
     };
