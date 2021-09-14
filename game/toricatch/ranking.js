@@ -26,6 +26,7 @@ function submit(p) {
 function read_ranking(){
     var LIST = [];  //ID保管用
 
+    //scoreの高い順に10個取得する
     db.collection("scores").orderBy('point', 'desc').limit(10).get().then((querySnapshot) => {
             var buff = [];
             var html = "<ol>";
