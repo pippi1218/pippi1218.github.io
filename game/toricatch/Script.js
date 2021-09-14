@@ -149,7 +149,7 @@ window.onload=function(){
             }
             if(state == 6){
                 inkoImg.x += 10;
-                inkoImg.y = 100 + Math.sin(inkoImg.x/50)*50;
+                inkoImg.y = 100 + Math.sin(inkoImg.x/50)*80;
             }
             if(state == 7){
                 inkoImg.x += 10;
@@ -164,16 +164,16 @@ window.onload=function(){
                 inkoImg.y = 200;
             }
             if(state == 10){
-                inkoImg.x += 25;
-                inkoImg.y =100 + Math.cos(inkoImg.x/200)*150;
+                inkoImg.x += 8;
+                inkoImg.y =200 + Math.tan(inkoImg.x/100)*30;
             }
             if(state == 11){
                 inkoImg.x += 8;
                 inkoImg.y =100 + Math.tan(inkoImg.x/50)*30;
             }
             if(state == 12){
-                inkoImg.x += 8;
-                inkoImg.y =100 + Math.tan(inkoImg.x/100)*50;
+                inkoImg.x += 20;
+                inkoImg.y =100 + Math.cos(inkoImg.x/200)*150;
             }
             if(state == 13){
                 inkoImg.x += 15;
