@@ -168,8 +168,8 @@ window.onload=function(){
                 inkoImg.y =200 + Math.tan(inkoImg.x/100)*30;
             }
             if(state == 11){
-                inkoImg.x += 8;
-                inkoImg.y =100 + Math.tan(inkoImg.x/50)*30;
+                inkoImg.x += 15;
+                inkoImg.y =100 + Math.tanh(inkoImg.x/100)*300;
             }
             if(state == 12){
                 inkoImg.x += 20;
@@ -184,8 +184,8 @@ window.onload=function(){
                 inkoImg.y =200 + Math.cos(inkoImg.x/50)*400;
             }
             if(state == 15){
-                inkoImg.x += 15;
-                inkoImg.y =100 + Math.tanh(inkoImg.x/100)*300;
+                inkoImg.x += 8;
+                inkoImg.y =100 + Math.tan(inkoImg.x/50)*30;
             }
             if(state == 16){
                 inkoImg.x += 15;
