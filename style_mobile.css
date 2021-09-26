@@ -4,7 +4,7 @@
   body {
     padding-top: 90px;
     background-color: black;
-    font-family: Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    font-family: "メイリオ", Meiryo, sans-serif;
     font-size: 12px;
     width: 375px;
     margin-right: auto;
@@ -13,10 +13,10 @@
 
   header {
     width: 375px;
+    background: black;
     margin-left: auto;
     margin-right: auto;
     height: 100px;
-    background: black;
     box-sizing: border-box;
     position: fixed;
     top: 0;
