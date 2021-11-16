@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+@media screen and (max-width: 800px) {
+  body {
+    padding-top: 90px;
+    background-color: black;
+    font-family: "メイリオ", Meiryo, sans-serif;
+    font-size: 12px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  header {
+    width: 375px;
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+  header .nav .menu {
+    display: flex;
+  }
+
+  header .nav .menu li {
+    list-style: none;
+  }
+
+  header .nav .menu li + li {
+    margin-left: 25px;
+  }
+
+  .title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    order: 0;
+    color: aqua;
+    font-size: 40px;
+    text-align: center;
+  }
+}
