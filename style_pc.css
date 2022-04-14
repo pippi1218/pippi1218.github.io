@@ -81,6 +81,12 @@
     height: 190px;
   }
 
+  #marontter-img {
+    border: 0;
+    width: 375px;
+    height: 375px;
+  }
+
   #marostagram-img {
     border: 0;
     width: 375px;
