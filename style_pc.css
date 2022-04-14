@@ -69,12 +69,6 @@
     text-align: center;
   }
 
-  .marontter img {
-    border: 0;
-    width: 500px;
-    height: auto;
-  }
-
   #icon-img {
     border: 0;
     width: 60px;
@@ -87,9 +81,25 @@
     height: 190px;
   }
 
+  #marostagram-img {
+    border: 0;
+    width: 375px;
+    height: 375px;
+  }
+
   .marontter {
     float: left;
-    width: 500px;
+    width: 375px;
+    margin-bottom: 10px;
+    border: #ffb6c1 solid 1px;
+    color: #ff99cc;
+    font-size: 100%;
+    padding: 10px;
+  }
+
+  .marostagram {
+    float: right;
+    width: 375px;
     margin-bottom: 10px;
     border: #ffb6c1 solid 1px;
     color: #ff99cc;
