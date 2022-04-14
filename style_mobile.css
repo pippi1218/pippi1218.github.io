@@ -82,6 +82,7 @@
   }
 
   #marostagram-img {
+    order: 1;
     border: 0;
     width: 350px;
     height: 350px;
