@@ -35,9 +35,8 @@
   }
 
   .top {
-    width: 550px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 500px;
+    margin-left: 100px;
     overflow: hidden;
     animation: flowing 8s linear infinite;
     transform: translateX(100%);
@@ -45,7 +44,7 @@
 
   .top-text {
     color: #ff33cc;
-    font-size: 20px;
+    font-size: 40px;
   }
 
   .title {
