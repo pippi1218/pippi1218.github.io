@@ -4,7 +4,7 @@
   body {
     padding-top: 90px;
     background-color: black;
-    font-family: "メイリオ", Meiryo, sans-serif;
+    font-family: "Kiwi Maru", serif;
     font-size: 100%;
     width: 800px;
     margin-right: auto;
@@ -23,6 +23,7 @@
     top: 0;
     display: flex;
     align-items: center;
+    z-index: 1;
   }
   header .nav .menu {
     display: flex;
@@ -38,6 +39,7 @@
 
   .top {
     width: 500px;
+    margin-top: -50px;
     margin-left: 100px;
     overflow: scroll;
     overflow: hidden;
@@ -95,7 +97,7 @@
     height: 190px;
   }
 
-  #marontter-img {
+  #marotter-img {
     border: 0;
     width: 375px;
     height: 375px;
@@ -107,7 +109,7 @@
     height: 375px;
   }
 
-  .marontter {
+  .marotter {
     float: left;
     width: 375px;
     margin-bottom: 10px;
@@ -139,6 +141,15 @@
     text-align: center;
   }
 
+  a:hover {
+    color: #dc6688;
+    text-decoration: transparent;
+  }
+
+  a {
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+
   footer {
     display: flex;
     justify-content: space-around;
@@ -168,6 +179,18 @@
     }
     100% {
       transform: translate(100%, 0);
+    }
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(10deg);
     }
   }
 }
