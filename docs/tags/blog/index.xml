@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Maron&#39;s blog</title>
+    <link>https://pippi1218.github.io/tags/blog/</link>
+    <description>Recent content in blog on Maron&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&lt;b&gt;© 2022 by Maron&lt;/b&gt; &lt;br&gt; Build with Hugo &amp; Theme by &lt;a href=&#39;https://github.com/MeiK2333/github-style&#39;&gt;github-style&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 18 Aug 2022 22:53:44 +0900</lastBuildDate><atom:link href="https://pippi1218.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>初めての投稿</title>
+      <link>https://pippi1218.github.io/post/20220818_first-post/</link>
+      <pubDate>Thu, 18 Aug 2022 22:53:44 +0900</pubDate>
+      
+      <guid>https://pippi1218.github.io/post/20220818_first-post/</guid>
+      <description>はじめまして！</description>
+    </item>
+    
+  </channel>
+</rss>

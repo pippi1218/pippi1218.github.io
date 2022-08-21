@@ -6,6 +6,27 @@
     <description>Recent content on Maron&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <copyright>&lt;b&gt;© 2022 by Maron&lt;/b&gt; &lt;br&gt; Build with Hugo &amp; Theme by &lt;a href=&#39;https://github.com/MeiK2333/github-style&#39;&gt;github-style&lt;/a&gt;</copyright><atom:link href="https://pippi1218.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&lt;b&gt;© 2022 by Maron&lt;/b&gt; &lt;br&gt; Build with Hugo &amp; Theme by &lt;a href=&#39;https://github.com/MeiK2333/github-style&#39;&gt;github-style&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 18 Aug 2022 22:53:44 +0900</lastBuildDate><atom:link href="https://pippi1218.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>初めての投稿</title>
+      <link>https://pippi1218.github.io/post/20220818_first-post/</link>
+      <pubDate>Thu, 18 Aug 2022 22:53:44 +0900</pubDate>
+      
+      <guid>https://pippi1218.github.io/post/20220818_first-post/</guid>
+      <description>はじめまして！</description>
+    </item>
+    
+    <item>
+      <title>Readme</title>
+      <link>https://pippi1218.github.io/readme/</link>
+      <pubDate>Thu, 18 Aug 2022 22:15:48 +0900</pubDate>
+      
+      <guid>https://pippi1218.github.io/readme/</guid>
+      <description>わたしについて はじめまして！まろんです！
+2022の4月に北海道のIT企業に新卒で入社しました！
+ゲームをしたり、アニメを見ることが好きです！</description>
+    </item>
+    
   </channel>
 </rss>
