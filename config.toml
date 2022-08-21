@@ -1,0 +1,38 @@
+baseURL = "https://pippi1218.github.io"
+languageCode = "ja"
+title = "Maron's blog"
+theme = "github-style"
+publishDir = "docs"
+copyright = "<b>© 2022 by Maron</b> <br> Build with Hugo & Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a>"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  author = "Maron"
+  description = "インコが大好きなエンジニア"
+  github = "pippi1218"
+  twitter = "pippi1218"
+  url = "https://pippi1218.github.io"
+  rss = true
+  lastmod = true
+  userStatusEmoji = "🐤"
+  favicon = "/images/github.png"
+  location = "Japan"
+
+  enableGitalk = false
+
+  [params.gitalk]
+    clientID = ""
+    clientSecret = ""
+    repo = "pippi1218.github.io"
+    owner = "pippi1218"
+    admin = "pippi1218"
+    id = "location.pathname"
+    labels = "gitalk"
+    perPage = 15
+    pagerDirection = "last"
+    createIssueManually = true
+    distractionFreeMode = false
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
