@@ -14,4 +14,4 @@ summary = "はじめまして！"
 
 そのときのPCの様子がとても可愛かったので載せておきます！
 
-![pc](C:\Hugo\sites\blog\static\images\first-post\pc.gif)  
+![pc.gif](/images/first-post/pc.gif)
