@@ -216,6 +216,24 @@
 <script type="application/javascript" src='https://pippi1218.github.io/js/toc.js'></script>
 <link rel="stylesheet" href='https://pippi1218.github.io/css/toc.css' />
 
+<div id="gitalk-container" class="gitalk-container"></div>
+<link rel="stylesheet" href='https://pippi1218.github.io/css/gitalk.css'>
+<script src='https://pippi1218.github.io/js/gitalk.min.js'></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '98ae80b0fe719af1017a',
+    clientSecret: 'c835427589fb1f35601a9e9ce8cc5b59679be3c8',
+    repo: 'pippi1218.github.io',
+    owner: 'pippi1218',
+    admin: ['pippi1218'],
+    id: eval("location.pathname"), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
 
   <div class="footer container-xl width-full p-responsive">
   <div
