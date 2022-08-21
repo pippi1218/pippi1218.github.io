@@ -19,11 +19,11 @@ pygmentsUseClasses = true
   favicon = "/images/github.png"
   location = "Japan"
 
-  enableGitalk = false
+  enableGitalk = true
 
   [params.gitalk]
-    clientID = ""
-    clientSecret = ""
+    clientID = "98ae80b0fe719af1017a"
+    clientSecret = "c835427589fb1f35601a9e9ce8cc5b59679be3c8"
     repo = "pippi1218.github.io"
     owner = "pippi1218"
     admin = "pippi1218"
