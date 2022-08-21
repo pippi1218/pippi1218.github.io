@@ -3,7 +3,6 @@ languageCode = "ja"
 title = "Maron's blog"
 theme = "github-style"
 publishDir = "docs"
-googleAnalytics = "G-F615JDF6PY"
 copyright = "<b>© 2022 by Maron</b> <br> Build with Hugo & Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a>"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
